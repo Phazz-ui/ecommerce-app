@@ -13,7 +13,7 @@ const ProductCard = ({ product, onAddToCart }) => {
       <div className="product-card__content">
         <h3 className="product-card__title">{title}</h3>
         <p className="product-card__description">
-          {description.length > 100 ? `${description.substring(0, 100)}...` : description}
+          {description.length > 120 ? `${description.substring(0, 120)}...` : description}
         </p>
         <div className="product-card__price">${Number(price).toFixed(2)}</div>
         <div className="product-card__actions">
